@@ -35,7 +35,7 @@ C++ has no language supported reflection, but we can approximate some reflection
   // declare members that we need to check if exist, or retrive value
   // these members should be declared regardless of them actually existing or not
   CREATE_MEMBER_CHECK(MemInt);
-  CREATE_MEMBER_CHECK(MemBool)
+  CREATE_MEMBER_CHECK(MemBool);
   CREATE_MEMBER_CHECK(MemFloat);
   CREATE_MEMBER_CHECK(MemDouble); // doesn't exist
   CREATE_MEMBER_CHECK(MemLong);   // doesn't exist
@@ -47,7 +47,7 @@ C++ has no language supported reflection, but we can approximate some reflection
   bool HasMemDouble = HAS_MEMBER(Foo, MemDouble); // false
   ```
 
-* Retrieve value if exist, 0 if not (member must be constructible from 0)
+* Retrieve value if exist, 0 if not (member type must be constructible from 0)
   ```cpp
   Foo o;
   o.MemInt = 5;
