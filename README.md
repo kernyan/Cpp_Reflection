@@ -1,15 +1,16 @@
 # C++ Reflection
 
-## Features of C++ Reflection
-
 C++ has no language supported reflection, but we can approximate some reflection functionality using template SFINAE and if constexpr.
 
 ## Features
 
 * Returns true if member exists (credits to [Andy Prowl](https://stackoverflow.com/a/14523787))
 * Returns value of member if exists, 0 otherwise
-* Compile-time
-* Header-only
+
+## Mechanism
+
+* Uses SFINAE to resolve to 0 or 1 depending on existence of member variable/function
+* Uses if constexpr in template function to exclude compilation of code that refers to non-existing member
 
 ## Restrictions
 
