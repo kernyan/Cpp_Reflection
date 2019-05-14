@@ -77,6 +77,9 @@ auto Get_##member(T &o)                                                     \
   }                                                                         \
 }
 
+#define HAS_MEMBER(Class, Member) \
+has_member_##Member<Class>::value;
+
 #define GET_MEMBER(Instance, Member) \
 Get_##Member(Instance);
 
