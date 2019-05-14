@@ -54,6 +54,6 @@ C++ has no language supported reflection, but we can approximate some reflection
   o.MemFloat = 1.234;
 
   auto FooInt = GET_MEMBER(o, MemInt);    // FooInt is 5
-  auto FooFloat = GET_MEMBER(o, MemInt);  // FooFloat is 1.234
-  auto FooDouble = GET_MEMBER(o, MemInt); // FooDouble is 0
+  auto FooFloat = GET_MEMBER(o, MemFloat);  // FooFloat is 1.234
+  auto FooDouble = GET_MEMBER(o, MemDouble); // FooDouble is 0
   ```
