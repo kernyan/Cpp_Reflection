@@ -4,7 +4,7 @@ C++ has no language supported reflection, but we can approximate some reflection
 
 ## Features
 
-* Returns true if member exists (credits to [Andy Prowl](https://stackoverflow.com/a/14523787))
+* Returns true if member exists (credits to [Brett Rossier](https://stackoverflow.com/a/6324917))
 * Returns value of member if exists, 0 otherwise
 
 ## Mechanism
